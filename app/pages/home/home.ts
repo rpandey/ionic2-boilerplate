@@ -22,12 +22,13 @@ export class HomePage {
 
         });
     }
-    ourData:any;
+    ourData:any[];
     getData() {
 
       this.starterService.getData().then(function(res){
 
         console.log("gettting it ",res);
+        this.ourData = res;
       });
     }
 }
