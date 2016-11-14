@@ -6,11 +6,19 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content class="home">
-  <ion-list inset>
+<ion-content>
+  <ion-list>
+        <ion-item *ngFor = "let obj of ourData">
+          <div>{{obj.name}}</div>
+          <div>{{obj.rollNo}}</div>
+        </ion-item>
 
-    <button class="button button-full button-calm" (click)= "getData()">
-        Button Full Calm
-    </button>
+        <button class="button button-full button-calm" (click)= "getData()">
+            Button Full Calm
+        </button>
+
+
+
+
   </ion-list>
 </ion-content>

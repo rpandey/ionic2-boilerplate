@@ -1,21 +1,21 @@
-{
-  "1":{
+[
+  {
       "name":"ankit",
       "rollNo":"63"
   },
-  "2":{
+  {
     "name":"riti",
     "rollNo":"68",
 
   },
-  "3":{
+  {
     "name":"jake",
     "rollNo":"99"
   },
-  "4":{
+  {
     "name":"tk",
     "rollNo":"72"
   }
-  
 
-}
+
+]

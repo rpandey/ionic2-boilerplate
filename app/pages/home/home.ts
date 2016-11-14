@@ -1,4 +1,4 @@
-import {Component, NgZone} from "@angular/core";
+import {Component} from "@angular/core";
 import {NavController, Platform} from 'ionic-angular';
 import {StarterService} from '../../services/starter.service';
 
@@ -11,10 +11,9 @@ export class HomePage {
 
     constructor(private starterService: StarterService,
         private nav: NavController,
-        private platform: Platform,
-        private zone: NgZone) {
+        private platform: Platform)
+{}
 
-    }
 
     ionViewLoaded() {
         this.platform.ready().then(() => {
@@ -25,9 +24,11 @@ export class HomePage {
     ourData:any[];
     getData() {
 
-      this.starterService.getData().then(function(res){
+
+      this.starterService.getData().then((res)=>{
 
         console.log("gettting it ",res);
+
         this.ourData = res;
       });
     }
